@@ -1,0 +1,98 @@
+﻿@model Carreno_Financial_Portal.Models.BankAccount
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>BankAccount</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.BankAccountType.Type)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.BankAccountType.Type)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Household.Name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Household.Name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Owner.Email)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Owner.Email)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Created)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Created)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Amount)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Amount)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.StartingBalance)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.StartingBalance)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.CurrentBalanec)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.CurrentBalanec)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.LowBalanceLevel)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.LowBalanceLevel)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
